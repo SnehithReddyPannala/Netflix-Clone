@@ -1,0 +1,535 @@
+*{
+    margin:0;
+    padding:0;
+}
+body{
+    background-color: black;
+}
+.main{
+    background-image: url("https://i.postimg.cc/PJySqDDx/bg.jpg");
+    height:70vh;
+   background-size:cover;        /* Ensures the image covers the whole area */
+    background-position: center;   /* Centers the image */
+    background-repeat: no-repeat;
+    /*background-size: max(1200px,100vw);*/
+    position: relative;
+    overflow: hidden;
+}
+.main .box{
+    height:70vh;
+    width:100%;
+    opacity: 0.65;
+    position: absolute;
+    top:0;
+     background-color: black;
+}
+nav{
+    max-width: 60vw;
+    display: flex;
+    align-items: center;
+    margin:auto;
+    justify-content: space-between;
+    height:62px;
+        position: relative;
+    z-index: 1;
+    padding-top:20px;
+}
+nav img{
+    width:120px;
+}
+.hero{
+    color:white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height:calc(100% - 62px);
+    flex-direction: column;
+    position: relative;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    gap: 20px;
+    padding:0 30px;
+}
+.hero>*:first-child{
+    font-size: 48px;
+    font-weight: bolder;
+    text-align: center;
+}
+.hero>*:nth-child(2){
+    font-size: 24px;
+    font-weight: 400;
+    text-align: center;
+}
+.hero>*:nth-child(3){
+    font-size: 20px;
+    font-weight: 400;
+    text-align: center;
+}
+.separation{
+    height:7px;
+    background-color:rgb(67, 66, 66);
+}
+
+.btn{
+    padding :4px 8px;
+    font-weight: bold;
+    background-color: white;
+    border:none;
+    border-radius: 27px;
+    padding: 8px;
+}
+.red1{
+    background-color: red;
+    border: none;
+    color:white;
+    padding: 8px 10px;
+
+
+}
+.red2{
+    background-color: red;
+    border:none;
+    color:white;
+    padding:10px 16px;
+    font-size: 20px;
+}
+.red1:hover{
+    opacity: 0.8;
+}
+.red2:hover{
+    opacity:0.8;
+}
+.hero-buttons input{
+      padding:11px 4px 11px 3px;
+    font-size: 16px;
+    color:white;
+    font-weight: 200;
+    background-color:rgba(126, 121, 121, 0.886);
+    border: solid;
+    border-radius: 27px;
+    border:1px solid rgba(126, 121, 121, 0.886);;
+}
+input::placeholder{
+    color:rgb(178, 174, 174);
+}
+.hero-buttons::placeholder {
+    color: #1d0a0a; 
+    font-size: 16px;
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.hero-buttons{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+}
+.flex{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+}
+.lang{
+    font-weight: 400;
+    background: transparent;
+    color: rgba(255,255,255,0.7);
+    border: 1px solid rgba(255,255,255,0.7);
+        padding: 8px 10px;
+}
+.first{
+    display: flex;
+    justify-content: center;
+        align-items: center;
+    color:white;
+    max-width: 70vw;
+    margin: auto;
+}
+.secImg{
+    position: relative;
+    width:100%;
+    max-width: 555px;
+   margin: auto;
+}
+.secImg img,
+.secImg video{
+    width:100%;
+    height: auto;
+    display: block;
+}
+.secImg video{
+    position: absolute;
+     top:0;
+    left: 0;
+    z-index: 5;
+}
+section .first > div{
+    display: flex;
+    flex-direction: column;
+}
+.first > div :first-child{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: bolder;
+    font-size: 48px;
+}
+.first > div :nth-child(2){
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+      font-size: 24px;
+}
+.faq h2 {
+    text-align: center;
+    font-size: 48px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.faq {
+    background: black;
+    color: white;
+    padding: 34px;
+}
+.faqbox:hover {
+    background-color: #989595;
+    color: white;
+}
+.faqbox svg {
+    filter: invert(1);
+}
+
+.faqbox {
+    transition: all 1s ease-out;
+    font-size: 24px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    display: flex;
+    justify-content: space-between;
+    background-color: #2d2d2d;
+    padding: 24px;
+    max-width: 60vw;
+    margin: 34px auto;
+    cursor: pointer;
+    border-radius: 4px;
+    font-weight: bold;
+}
+footer{
+    margin-bottom: 50px;
+}
+.footer-item{
+    display:flex;
+    flex-direction: column;
+    align-items:center;
+     justify-content: space-evenly;
+}
+
+footer a{
+    color: rgba(255,255,255,0.7);
+    max-width: 60vw;
+    margin: auto;
+    padding: 10px;
+}
+
+footer .questions {
+    padding:5px 0;
+}
+
+
+.footer {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    color: rgb(104, 102, 102);
+    position: relative;
+    margin-bottom: 50px;
+}
+.spanlast{
+    font-size: 20px;
+    font-weight: 400;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+.l{
+    margin:13px;
+}
+.lastme{
+    color: rgba(255,255,255,0.7);
+    padding:70px;
+    display: flex;
+    flex-direction: column;
+        justify-content:space-evenly;
+        margin-left: 70px;
+        gap:37px;
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.lastme a{
+    color:blue;
+}
+.lasteng{
+    margin-left:140px;
+    color:rgba(255,255,255,0.7);
+}/*
+@media screen and (max-width: 1300px) {
+
+    nav{
+        max-width: 90vw;
+    }
+
+    .first {
+        flex-wrap: wrap;
+    }
+
+    .secImg img {
+        width: 305px;
+    }
+
+    .secImg video {
+        width: 305px;
+    }
+
+    .hero> :nth-child(1) {
+        font-size: 26px;
+    }
+
+    .hero> :nth-child(2) {
+        font-size: 14px;
+    }
+
+    .hero> :nth-child(3) {
+        font-size: 14px;
+    }
+
+    .hero-buttons {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 16px;
+    }
+
+    .faq h2 {
+        text-align: center;
+        font-size: 32px;
+    }
+
+    footer {
+        max-width: 90vw;
+        padding: 75px 0;
+    }
+
+    .footer-item{
+        align-items: center;
+    }
+ 
+
+}
+
+
+
+@media screen and (max-width: 1300px) {
+
+    .footer {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 25px;
+    }
+}
+
+
+.footer a {
+    font-size: 14px;
+    color: white;
+}
+
+.footer-item {
+    display: flex;
+    flex-direction: column;
+    gap: 23px;
+}*/
+/* ------------ Large Screens (Desktops) ------------ */
+@media screen and (max-width: 1300px) {
+    nav {
+        max-width: 90vw;
+    }
+
+    .first {
+        flex-wrap: wrap;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .first .secImg {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 20px;
+        width: 100%;
+        max-width: 305px;
+    }
+
+    .secImg img,
+    .secImg video {
+        width: 100%;
+    }
+
+    .hero > :nth-child(1) {
+        font-size: 26px;
+    }
+
+    .hero > :nth-child(2),
+    .hero > :nth-child(3) {
+        font-size: 14px;
+    }
+
+    .hero-buttons {
+        flex-direction: column;
+        align-items: center;
+        gap: 16px;
+    }
+
+    .faq h2 {
+        text-align: center;
+        font-size: 32px;
+    }
+
+    footer {
+        max-width: 90vw;
+        padding: 75px 0;
+    }
+
+    .footer-item {
+        align-items: center;
+    }
+
+    .footer {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 25px;
+    }
+}
+
+/* ------------ Medium Screens (Tablets) ------------ */
+@media screen and (max-width: 992px) {
+    nav img {
+        width: 90px;
+    }
+
+    .first {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .first .secImg {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 20px;
+        width: 100%;
+        max-width: 240px;
+    }
+
+    .secImg img,
+    .secImg video {
+        width: 100%;
+    }
+
+    .hero > :nth-child(1) {
+        font-size: 22px;
+    }
+
+    .hero > :nth-child(2),
+    .hero > :nth-child(3) {
+        font-size: 12px;
+    }
+
+    .footer {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .hero-buttons {
+        gap: 12px;
+    }
+}
+
+/* ------------ Small Screens (Large Phones) ------------ */
+@media screen and (max-width: 768px) {
+    .main {
+        height: auto;
+    }
+
+    .hero {
+        padding: 20px 10px;
+    }
+
+    .first {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .first .secImg {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 20px;
+        width: 100%;
+        max-width: 200px;
+    }
+
+    .secImg img,
+    .secImg video {
+        width: 100%;
+    }
+
+    nav {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .footer {
+        gap: 15px;
+    }
+}
+
+/* ------------ Extra Small Screens (Small Phones) ------------ */
+@media screen and (max-width: 480px) {
+    .hero > :nth-child(1) {
+        font-size: 18px;
+    }
+
+    .hero > :nth-child(2),
+    .hero > :nth-child(3) {
+        font-size: 10px;
+    }
+
+    .first {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .first .secImg {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 15px;
+        width: 100%;
+        max-width: 100%;
+        padding: 0 10px;
+    }
+
+    .secImg img,
+    .secImg video {
+        width: 100%;
+    }
+
+    .hero-buttons {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .footer a {
+        font-size: 12px;
+    }
+
+    .footer-item {
+        align-items: flex-start;
+        gap: 12px;
+    }
+}
