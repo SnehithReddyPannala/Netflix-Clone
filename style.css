@@ -1,3 +1,4 @@
+
 *{
     margin:0;
     padding:0;
@@ -6,14 +7,13 @@ body{
     background-color: black;
 }
 .main{
-    background-image: url("https://i.postimg.cc/PJySqDDx/bg.jpg");
+    background-image: url("Assets/bg.jpg");
     height:70vh;
    background-size:cover;        /* Ensures the image covers the whole area */
     background-position: center;   /* Centers the image */
     background-repeat: no-repeat;
     /*background-size: max(1200px,100vw);*/
     position: relative;
-    overflow: hidden;
 }
 .main .box{
     height:70vh;
@@ -32,7 +32,6 @@ nav{
     height:62px;
         position: relative;
     z-index: 1;
-    padding-top:20px;
 }
 nav img{
     width:120px;
@@ -143,23 +142,22 @@ input::placeholder{
     max-width: 70vw;
     margin: auto;
 }
-.secImg{
+.secImg {
     position: relative;
-    width:100%;
-    max-width: 555px;
-   margin: auto;
 }
-.secImg img,
-.secImg video{
-    width:100%;
-    height: auto;
-    display: block;
+
+.secImg img {
+    width: 555px;
+    position: relative;
+    z-index: 10;
 }
-.secImg video{
+
+.secImg video {
     position: absolute;
-     top:0;
-    left: 0;
-    z-index: 5;
+    top: 51px;
+    right: 0;
+    width: 555px;
+
 }
 section .first > div{
     display: flex;
@@ -262,7 +260,7 @@ footer .questions {
 .lasteng{
     margin-left:140px;
     color:rgba(255,255,255,0.7);
-}/*
+}
 @media screen and (max-width: 1300px) {
 
     nav{
@@ -282,15 +280,15 @@ footer .questions {
     }
 
     .hero> :nth-child(1) {
-        font-size: 26px;
+        font-size: 32px;
     }
 
     .hero> :nth-child(2) {
-        font-size: 14px;
+        font-size: 18px;
     }
 
     .hero> :nth-child(3) {
-        font-size: 14px;
+        font-size: 18px;
     }
 
     .hero-buttons {
@@ -339,197 +337,4 @@ footer .questions {
     display: flex;
     flex-direction: column;
     gap: 23px;
-}*/
-/* ------------ Large Screens (Desktops) ------------ */
-@media screen and (max-width: 1300px) {
-    nav {
-        max-width: 90vw;
-    }
-
-    .first {
-        flex-wrap: wrap;
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
-    }
-
-    .first .secImg {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        margin-top: 20px;
-        width: 100%;
-        max-width: 305px;
-    }
-
-    .secImg img,
-    .secImg video {
-        width: 100%;
-    }
-
-    .hero > :nth-child(1) {
-        font-size: 26px;
-    }
-
-    .hero > :nth-child(2),
-    .hero > :nth-child(3) {
-        font-size: 14px;
-    }
-
-    .hero-buttons {
-        flex-direction: column;
-        align-items: center;
-        gap: 16px;
-    }
-
-    .faq h2 {
-        text-align: center;
-        font-size: 32px;
-    }
-
-    footer {
-        max-width: 90vw;
-        padding: 75px 0;
-    }
-
-    .footer-item {
-        align-items: center;
-    }
-
-    .footer {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        gap: 25px;
-    }
-}
-
-/* ------------ Medium Screens (Tablets) ------------ */
-@media screen and (max-width: 992px) {
-    nav img {
-        width: 90px;
-    }
-
-    .first {
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
-    }
-
-    .first .secImg {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        margin-top: 20px;
-        width: 100%;
-        max-width: 240px;
-    }
-
-    .secImg img,
-    .secImg video {
-        width: 100%;
-    }
-
-    .hero > :nth-child(1) {
-        font-size: 22px;
-    }
-
-    .hero > :nth-child(2),
-    .hero > :nth-child(3) {
-        font-size: 12px;
-    }
-
-    .footer {
-        grid-template-columns: 1fr 1fr;
-    }
-
-    .hero-buttons {
-        gap: 12px;
-    }
-}
-
-/* ------------ Small Screens (Large Phones) ------------ */
-@media screen and (max-width: 768px) {
-    .main {
-        height: auto;
-    }
-
-    .hero {
-        padding: 20px 10px;
-    }
-
-    .first {
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
-    }
-
-    .first .secImg {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        margin-top: 20px;
-        width: 100%;
-        max-width: 200px;
-    }
-
-    .secImg img,
-    .secImg video {
-        width: 100%;
-    }
-
-    nav {
-        flex-direction: column;
-        gap: 10px;
-    }
-
-    .footer {
-        gap: 15px;
-    }
-}
-
-/* ------------ Extra Small Screens (Small Phones) ------------ */
-@media screen and (max-width: 480px) {
-    .hero > :nth-child(1) {
-        font-size: 18px;
-    }
-
-    .hero > :nth-child(2),
-    .hero > :nth-child(3) {
-        font-size: 10px;
-    }
-
-    .first {
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
-    }
-
-    .first .secImg {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        margin-top: 15px;
-        width: 100%;
-        max-width: 100%;
-        padding: 0 10px;
-    }
-
-    .secImg img,
-    .secImg video {
-        width: 100%;
-    }
-
-    .hero-buttons {
-        flex-direction: column;
-        width: 100%;
-    }
-
-    .footer a {
-        font-size: 12px;
-    }
-
-    .footer-item {
-        align-items: flex-start;
-        gap: 12px;
-    }
 }
